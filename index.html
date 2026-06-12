@@ -94,10 +94,18 @@
               <video id="webcam" autoplay playsinline muted></video>
               <canvas id="output-canvas"></canvas>
               
-              <!-- 復古 CRT 覆蓋層：掃描線、眩光與暗角 -->
+               <!-- 復古 CRT 覆蓋層：掃描線、眩光與暗角 -->
               <div class="crt-scanlines"></div>
               <div class="crt-glare"></div>
               <div class="crt-vignette"></div>
+              
+              <!-- 復古大同電視木箱拉門 -->
+              <div id="tv-door-left" class="tv-door tv-door-left">
+                <div class="tv-door-handle right"></div>
+              </div>
+              <div id="tv-door-right" class="tv-door tv-door-right">
+                <div class="tv-door-handle left"></div>
+              </div>
               
               <!-- 開機預熱畫面 -->
               <div id="loading-overlay" class="overlay">
@@ -250,6 +258,6 @@
     </main>
   </div>
 
-  <script type="module" src="app.js"></script>
+  <script type="module" src="app.js?v=1.0.3"></script>
 </body>
 </html>
